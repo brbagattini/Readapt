@@ -1,6 +1,3 @@
-/* ===========================
-   RESET BÁSICO
-=========================== */
 * {
   margin: 0;
   padding: 0;
@@ -13,11 +10,6 @@ body {
   color: #111;
 }
 
-
-
-/* ===========================
-   HEADER / NAVBAR PRINCIPAL
-=========================== */
 .header {
   width: 100%;
   height: 70px;
@@ -57,11 +49,6 @@ body {
   font-weight: bold;
 }
 
-
-
-/* ===========================
-   HAMBURGUER MENU
-=========================== */
 .hamburger {
   width: 32px;
   height: 22px;
@@ -106,11 +93,6 @@ body {
   border-bottom: 1px solid #333;
 }
 
-
-
-/* ===========================
-   SEARCH BAR
-=========================== */
 .search-wrapper {
   display: flex;
   justify-content: center;
@@ -135,11 +117,6 @@ body {
   border-color: #888;
 }
 
-
-
-/* ===========================
-   AVATAR
-=========================== */
 .avatar-area {
   display: flex;
   align-items: center;
@@ -154,11 +131,6 @@ body {
   border: 2px solid #333;
 }
 
-
-
-/* ===========================
-   SLIDESHOW
-=========================== */
 .slideshow img {
   width: 100%;
   height: 260px;
@@ -169,10 +141,6 @@ body {
 }
 
 
-
-/* ===========================
-   PÁGINAS INTERNAS
-=========================== */
 h1 {
   margin: 20px;
   font-size: 2rem;
@@ -183,11 +151,6 @@ p {
   font-size: 1.1rem;
 }
 
-
-
-/* ===========================
-   FORM DE LOGIN
-=========================== */
 .login-form {
   display: flex;
   flex-direction: column;
@@ -216,11 +179,6 @@ p {
   background: #222;
 }
 
-
-
-/* ===========================
-   RESPONSIVIDADE
-=========================== */
 @media (max-width: 600px) {
   .search-wrapper input {
     width: 160px;
@@ -229,4 +187,104 @@ p {
   .site-name {
     font-size: 1.1rem;
   }
+}
+.perfil-card {
+  width: 350px;
+  margin: 40px auto;
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.perfil-card-foto {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.perfil-card-box {
+  border: 2px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.perfil-card-box h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.perfil-card-box p {
+  margin: 0;
+  color: #444;
+}
+
+.perfil-card-row {
+  display: flex;
+  gap: 12px;
+}
+
+.perfil-card-small {
+  flex: 1;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.perfil-card-small strong {
+  font-size: 0.9rem;
+}
+
+.perfil-card-small p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.cards-carousel {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.cards-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cards-carousel::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.prof-card {
+  min-width: 200px;
+  height: 260px;
+  background: white;
+  border: 2px solid #000;
+  border-radius: 6px;
+}
+
+.carousel-arrow {
+  position: sticky;
+  right: 0;
+  align-self: center;
+  font-size: 2rem;
+  cursor: pointer;
+  color: black;
+  padding-left: 10px;
+  padding-right: 5px;
+  background: white;
+  border-left: 2px solid black;
 }
