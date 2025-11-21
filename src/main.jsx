@@ -7,7 +7,7 @@ import Home from "./Routes/Home.jsx";
 import Login from "./routes/Login.jsx";
 import SobreNos from "./routes/SobreNos.jsx";
 import ProfessionalCard from "./components/ProfessionalCard.jsx";
-
+import PerfilProfissional from "./routes/PerfilProfissional.jsx";
 
 // CONFIGURAÇÃO DE ROTAS
 const router = createBrowserRouter([
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/login", element: <Login /> },
       { path: "/sobrenos", element: <SobreNos /> },
-      {path: "/perfil/:id", element: <ProfessionalCard />,},
+      {path: "/perfil/:id", element: <PerfilProfissional />,},
 
     ],
   },

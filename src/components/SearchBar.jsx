@@ -1,15 +1,11 @@
-import { useState } from "react";
-
-export default function SearchBar() {
-  const [text, setText] = useState("");
-
+export default function SearchBar({ value, onChange }) {
   return (
     <div className="search-wrapper">
       <input
         type="text"
         placeholder="Pesquisar..."
-        value={text}
-        onChange={(e) => setText(e.target.value)}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
       />
     </div>
   );

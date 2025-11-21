@@ -1,9 +1,13 @@
 import { Outlet, Link } from "react-router-dom";
+import { useState } from "react";
 import MenuHamburguer from "./components/MenuHamburguer";
-import SearchBar from "./Components/SearchBar";
+import SearchBar from "./components/SearchBar";
 import "./App.css";
 
 export default function App() {
+
+  const [search, setSearch] = useState("");
+
   return (
     <>
       <header className="header">
@@ -20,17 +24,16 @@ export default function App() {
           </Link>
         </div>
 
-        <SearchBar />
+        {/* SEARCHBAR AGORA É DO HEADER E FUNCIONA */}
+        <SearchBar value={search} onChange={setSearch} />
 
         <div className="avatar-area">
-          <img
-            src=""
-            alt="avatar"
-            className="avatar"
-          />
+          <img src="https://i.pravatar.cc/40" alt="avatar" className="avatar" />
         </div>
       </header>
-      <Outlet />
+
+      {/* PASSANDO search PARA TODAS AS ROTAS */}
+      <Outlet context={{ search }} />
     </>
   );
 }

@@ -1,36 +1,31 @@
-import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export default function PerfilProfissional() {
-  const { id } = useParams();
-
-  const profissional = {
-    nome: "Marina Lopes",
-    descricao: "Desenvolvedora Full Stack especializada em React e Node.js.",
-    foto: "https://i.pravatar.cc/300",
-    localizacao: "São Paulo, Brasil",
-    area: "Tecnologia · Full Stack"
-  };
-
+export default function ProfessionalCard({ id, nome, imagem, descricao, localizacao, area }) {
   return (
-    <div className="perfil-card">
-      <img src={profissional.foto} className="perfil-card-foto" />
-      <div className="perfil-card-box">
-        <h2>{profissional.nome}</h2>
+    <Link to={`/perfil/${id}`} className="tech-card">
+      
+      <img src={imagem} alt={nome} className="tech-card-img" />
+
+      <div className="tech-card-box">
+        <h3>{nome}</h3>
       </div>
-      <div className="perfil-card-box">
-        <p>{profissional.descricao}</p>
+
+      <div className="tech-card-box desc-box">
+        <p>{descricao}</p>
       </div>
-      <div className="perfil-card-row">
-        <div className="perfil-card-small">
+
+      <div className="tech-card-row">
+        <div className="tech-card-small">
           <strong>Localização</strong>
-          <p>{profissional.localizacao}</p>
+          <p>{localizacao}</p>
         </div>
-        <div className="perfil-card-small">
+
+        <div className="tech-card-small">
           <strong>Área</strong>
-          <p>{profissional.area}</p>
+          <p>{area}</p>
         </div>
       </div>
 
-    </div>
+    </Link>
   );
 }
