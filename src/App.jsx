@@ -8,15 +8,36 @@ export default function App() {
   const [search, setSearch] = useState("");
   const [avatar, setAvatar] = useState("https://i.pravatar.cc/40");
 
+  // 🌙 Tema (dark / light)
+  const [darkMode, setDarkMode] = useState(false);
+
+  // Carregar tema + avatar
   useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "dark") {
+      setDarkMode(true);
+      document.body.classList.add("dark");
+    }
+
     const stored = localStorage.getItem("perfilCompleto");
     if (stored) {
       const perfil = JSON.parse(stored);
       if (perfil.foto) {
-        setAvatar(perfil.foto); // <-- atualiza avatar automaticamente
+        setAvatar(perfil.foto);
       }
     }
   }, []);
+
+  // Aplicar tema quando mudar
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.body.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
 
   return (
     <>
@@ -36,7 +57,15 @@ export default function App() {
 
         <SearchBar value={search} onChange={setSearch} />
 
-        {/* AVATAR DINÂMICO */}
+        {/* BOTÃO DARK MODE */}
+        <button
+          className="dark-toggle"
+          onClick={() => setDarkMode(!darkMode)}
+        >
+          {darkMode ? "☀️" : "🌙"}
+        </button>
+
+        {/* AVATAR */}
         <div className="avatar-area">
           <Link to="/meu-perfil">
             <img
