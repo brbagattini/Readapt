@@ -1040,3 +1040,55 @@ textarea.perfil-input {
     height: 100px;
   }
 }
+.btn-conectar {
+  width: 100%;
+  padding: 12px;
+  background: #111;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn-conectar:hover {
+  background: #333;
+}
+.conexoes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.conexao-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.conexao-foto {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.ver-link {
+  color: #0066ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.btn-remover {
+  margin-left: auto;
+  background: #ff4b4b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}

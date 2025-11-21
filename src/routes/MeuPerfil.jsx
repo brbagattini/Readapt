@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function MeuPerfil() {
   const [perfil, setPerfil] = useState(null);
@@ -7,27 +8,35 @@ export default function MeuPerfil() {
     const data = localStorage.getItem("perfilCompleto");
 
     if (data) {
-      setPerfil(JSON.parse(data));
-    } else {
+      const stored = JSON.parse(data);
+
+      // conexões armazenadas separadamente
+      const conexoes = JSON.parse(localStorage.getItem("conexoes")) || [];
+
       setPerfil({
+        ...stored,
+        conexoes
+      });
+    } else {
+      const defaultPerfil = {
         foto: "https://i.pravatar.cc/300",
-        nome: "Seu nome",
-        cargo: "Sua profissão",
-        bio: "Escreva aqui sua bio...",
+        nome: "Seu Nome",
+        cargo: "Sua Profissão",
+        bio: "Escreva aqui sua bio profissional...",
         localizacao: "Sua cidade",
-        tags: ["Design · UX/UI"],
-        hardSkills: ["Figma", "Prototipagem"],
-        softSkills: ["Comunicação", "Trabalho em equipe"],
+        tags: ["UX/UI", "Design"],
+        hardSkills: ["Figma", "UI Design"],
+        softSkills: ["Empatia", "Comunicação"],
         experiencias: [
           {
-            titulo: "Nome da Experiência",
+            titulo: "Cargo / Experiência",
             ano: "2020 - 2023",
-            descricao: "Descreva suas responsabilidades..."
+            descricao: "Descreva aqui sua experiência..."
           }
         ],
         formacao: [
           {
-            curso: "Curso",
+            curso: "Curso / Faculdade",
             instituicao: "Instituição",
             ano: "2019"
           }
@@ -36,35 +45,40 @@ export default function MeuPerfil() {
           {
             titulo: "Projeto",
             link: "https://exemplo.com",
-            descricao: "Descreva o projeto..."
+            descricao: "Descrição do projeto..."
           }
         ],
-        certificacoes: ["UX Research (Alura)", "Design Thinking (Google)"],
-        idiomas: ["Inglês: Avançado"],
-        areasInteresse: ["Tecnologia", "Psicologia Cognitiva"]
-      });
+        certificacoes: ["Design Thinking", "UX Research"],
+        idiomas: ["Inglês - Avançado"],
+        areasInteresse: ["Psicologia Cognitiva", "Tecnologia"],
+        conexoes: []
+      };
+
+      setPerfil(defaultPerfil);
+      localStorage.setItem("perfilCompleto", JSON.stringify(defaultPerfil));
     }
   }, []);
 
+  function atualizar(campo, valor) {
+    setPerfil(prev => ({ ...prev, [campo]: valor }));
+  }
+
   function salvar() {
     localStorage.setItem("perfilCompleto", JSON.stringify(perfil));
+    localStorage.setItem("conexoes", JSON.stringify(perfil.conexoes));
     alert("Perfil salvo!");
   }
 
-  function atualizar(campo, valor) {
-    setPerfil((prev) => ({ ...prev, [campo]: valor }));
-  }
-
-  function adicionarLista(campo, item) {
+  function handleAdd(campo, item) {
     if (!item.trim()) return;
-    setPerfil((prev) => ({
+    setPerfil(prev => ({
       ...prev,
       [campo]: [...prev[campo], item]
     }));
   }
 
-  function removerItem(campo, index) {
-    setPerfil((prev) => ({
+  function handleRemove(campo, index) {
+    setPerfil(prev => ({
       ...prev,
       [campo]: prev[campo].filter((_, i) => i !== index)
     }));
@@ -75,37 +89,39 @@ export default function MeuPerfil() {
     if (!file) return;
 
     const reader = new FileReader();
-    reader.onload = () => atualizar("foto", reader.result);
+    reader.onload = () => {
+      atualizar("foto", reader.result);
+
+      // salva no localStorage
+      const updated = { ...perfil, foto: reader.result };
+      localStorage.setItem("perfilCompleto", JSON.stringify(updated));
+    };
     reader.readAsDataURL(file);
   }
 
-  if (!perfil) return <h1>Carregando perfil...</h1>;
+  if (!perfil) return <h2>Carregando perfil...</h2>;
 
   return (
     <div className="perfil-grande">
-
+      
       {/* FOTO */}
       <label className="foto-wrapper">
         <img src={perfil.foto} alt="foto" className="foto-perfil" />
         <input type="file" onChange={alterarFoto} style={{ display: "none" }} />
       </label>
 
-      {/* NOME + CARGO */}
-      <h2>
-        <input
-          value={perfil.nome}
-          onChange={(e) => atualizar("nome", e.target.value)}
-          className="input-titulo"
-        />
-      </h2>
+      {/* NOME E CARGO */}
+      <input
+        className="input-titulo"
+        value={perfil.nome}
+        onChange={(e) => atualizar("nome", e.target.value)}
+      />
 
-      <h3>
-        <input
-          value={perfil.cargo}
-          onChange={(e) => atualizar("cargo", e.target.value)}
-          className="input-sub"
-        />
-      </h3>
+      <input
+        className="input-sub"
+        value={perfil.cargo}
+        onChange={(e) => atualizar("cargo", e.target.value)}
+      />
 
       {/* BIO */}
       <textarea
@@ -122,70 +138,70 @@ export default function MeuPerfil() {
       />
 
       {/* TAGS */}
+      <h3>Tags</h3>
       <div className="tags">
         {perfil.tags.map((t, i) => (
-          <span key={i} className="tag" onClick={() => removerItem("tags", i)}>
+          <span key={i} className="tag" onClick={() => handleRemove("tags", i)}>
             {t} ✕
           </span>
         ))}
       </div>
 
       <input
+        className="input-add"
         placeholder="Adicionar tag..."
         onKeyDown={(e) => {
-          if (e.key === "Enter") adicionarLista("tags", e.target.value);
+          if (e.key === "Enter") handleAdd("tags", e.target.value);
         }}
-        className="input-add"
       />
 
       {/* HARD SKILLS */}
       <h3>Hard Skills</h3>
       <div className="tags">
-        {perfil.hardSkills.map((t, i) => (
-          <span key={i} className="tag" onClick={() => removerItem("hardSkills", i)}>
-            {t} ✕
+        {perfil.hardSkills.map((s, i) => (
+          <span key={i} className="tag" onClick={() => handleRemove("hardSkills", i)}>
+            {s} ✕
           </span>
         ))}
       </div>
 
       <input
+        className="input-add"
         placeholder="Adicionar Hard Skill..."
         onKeyDown={(e) => {
-          if (e.key === "Enter") adicionarLista("hardSkills", e.target.value);
+          if (e.key === "Enter") handleAdd("hardSkills", e.target.value);
         }}
-        className="input-add"
       />
 
       {/* SOFT SKILLS */}
       <h3>Soft Skills</h3>
       <div className="tags">
-        {perfil.softSkills.map((t, i) => (
-          <span key={i} className="tag" onClick={() => removerItem("softSkills", i)}>
-            {t} ✕
+        {perfil.softSkills.map((s, i) => (
+          <span key={i} className="tag" onClick={() => handleRemove("softSkills", i)}>
+            {s} ✕
           </span>
         ))}
       </div>
 
       <input
+        className="input-add"
         placeholder="Adicionar Soft Skill..."
         onKeyDown={(e) => {
-          if (e.key === "Enter") adicionarLista("softSkills", e.target.value);
+          if (e.key === "Enter") handleAdd("softSkills", e.target.value);
         }}
-        className="input-add"
       />
 
       {/* EXPERIÊNCIAS */}
       <h3>Experiências</h3>
-
       {perfil.experiencias.map((exp, i) => (
         <div key={i} className="box-exp">
           <input
             className="input-titulo"
             value={exp.titulo}
             onChange={(e) => {
-              const novo = [...perfil.experiencias];
-              novo[i].titulo = e.target.value;
-              atualizar("experiencias", novo);
+              const temp = [...perfil.experiencias];
+              temp[i].titulo = e.target.value;
+              atualizar("experiencias", temp);
             }}
           />
 
@@ -193,9 +209,9 @@ export default function MeuPerfil() {
             className="input-sub"
             value={exp.ano}
             onChange={(e) => {
-              const novo = [...perfil.experiencias];
-              novo[i].ano = e.target.value;
-              atualizar("experiencias", novo);
+              const temp = [...perfil.experiencias];
+              temp[i].ano = e.target.value;
+              atualizar("experiencias", temp);
             }}
           />
 
@@ -203,19 +219,21 @@ export default function MeuPerfil() {
             className="input-bio"
             value={exp.descricao}
             onChange={(e) => {
-              const novo = [...perfil.experiencias];
-              novo[i].descricao = e.target.value;
-              atualizar("experiencias", novo);
+              const temp = [...perfil.experiencias];
+              temp[i].descricao = e.target.value;
+              atualizar("experiencias", temp);
             }}
           />
 
-          <button onClick={() => removerItem("experiencias", i)}>Remover</button>
+          <button onClick={() => handleRemove("experiencias", i)}>
+            Remover
+          </button>
         </div>
       ))}
 
       <button
         onClick={() =>
-          adicionarLista("experiencias", {
+          handleAdd("experiencias", {
             titulo: "Nova Experiência",
             ano: "",
             descricao: ""
@@ -225,7 +243,35 @@ export default function MeuPerfil() {
         + Adicionar Experiência
       </button>
 
-      {/* SALVAR */}
+      {/* CONEXÕES */}
+      <h3>Suas Conexões</h3>
+
+      <div className="conexoes-container">
+        {perfil.conexoes.length > 0 ? (
+          perfil.conexoes.map((c, i) => (
+            <div key={i} className="conexao-card">
+              <img src={c.imagem || c.foto} className="conexao-foto" />
+
+              <div>
+                <h4>{c.nome}</h4>
+                <Link className="ver-link" to={`/perfil/${c.id}`}>
+                  Ver perfil →
+                </Link>
+              </div>
+
+              <button
+                className="btn-remover"
+                onClick={() => handleRemove("conexoes", i)}
+              >
+                ✕
+              </button>
+            </div>
+          ))
+        ) : (
+          <p>Nenhuma conexão ainda.</p>
+        )}
+      </div>
+
       <button className="btn-salvar" onClick={salvar}>
         Salvar Perfil
       </button>

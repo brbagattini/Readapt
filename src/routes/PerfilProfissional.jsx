@@ -174,12 +174,25 @@ const sendMessage = () => {
 
         {/* BOTÕES */}
         <div className="perfil-actions">
-          <button 
-  className={`connect-btn ${connected ? "connected" : ""}`}
-  onClick={() => !connected && setConnected(true)}
+          <button
+  className="btn-conectar"
+  onClick={() => {
+    const user = JSON.parse(localStorage.getItem("user"));
+    const conexoes = JSON.parse(localStorage.getItem("conexoes")) || [];
+
+    // evitar duplicados
+    if (!conexoes.find((c) => c.id === profissional.id)) {
+      conexoes.push(profissional);
+      localStorage.setItem("conexoes", JSON.stringify(conexoes));
+      alert("Conectado!");
+    } else {
+      alert("Você já está conectado com esse profissional.");
+    }
+  }}
 >
-  {connected ? "Conexão enviada ✓" : "Conectar"}
+  Conectar
 </button>
+
 
           <button 
   className="msg-btn"
