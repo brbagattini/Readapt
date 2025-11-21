@@ -1,12 +1,22 @@
 import { Outlet, Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MenuHamburguer from "./components/MenuHamburguer";
 import SearchBar from "./components/SearchBar";
 import "./App.css";
 
 export default function App() {
-
   const [search, setSearch] = useState("");
+  const [avatar, setAvatar] = useState("https://i.pravatar.cc/40");
+
+  useEffect(() => {
+    const stored = localStorage.getItem("perfilCompleto");
+    if (stored) {
+      const perfil = JSON.parse(stored);
+      if (perfil.foto) {
+        setAvatar(perfil.foto); // <-- atualiza avatar automaticamente
+      }
+    }
+  }, []);
 
   return (
     <>
@@ -24,15 +34,20 @@ export default function App() {
           </Link>
         </div>
 
-        {/* SEARCHBAR AGORA É DO HEADER E FUNCIONA */}
         <SearchBar value={search} onChange={setSearch} />
 
+        {/* AVATAR DINÂMICO */}
         <div className="avatar-area">
-          <img src="https://i.pravatar.cc/40" alt="avatar" className="avatar" />
+          <Link to="/meu-perfil">
+            <img
+              src={avatar}
+              alt="avatar"
+              className="avatar"
+            />
+          </Link>
         </div>
       </header>
 
-      {/* PASSANDO search PARA TODAS AS ROTAS */}
       <Outlet context={{ search }} />
     </>
   );

@@ -6,9 +6,9 @@ import App from "./App.jsx";
 import Home from "./Routes/Home.jsx";
 import Login from "./routes/Login.jsx";
 import SobreNos from "./routes/SobreNos.jsx";
-import ProfessionalCard from "./components/ProfessionalCard.jsx";
+import MeuPerfil from "./routes/MeuPerfil.jsx";
 import PerfilProfissional from "./routes/PerfilProfissional.jsx";
-
+import Cadastro from "./routes/Cadastro.jsx";
 // CONFIGURAÇÃO DE ROTAS
 const router = createBrowserRouter([
   {
@@ -18,7 +18,9 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/login", element: <Login /> },
       { path: "/sobrenos", element: <SobreNos /> },
-      {path: "/perfil/:id", element: <PerfilProfissional />,},
+      { path: "/perfil/:id", element: <PerfilProfissional />,},
+      { path: "/cadastro", element: <Cadastro /> },
+      { path: "/meu-perfil", element: <MeuPerfil />},
 
     ],
   },

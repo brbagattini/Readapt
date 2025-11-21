@@ -808,3 +808,235 @@ p {
   background: #00aa55;
   cursor: default;
 }
+/* LOGIN E CADASTRO */
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+.auth-form button {
+  padding: 12px;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* MEU PERFIL (editável) */
+.perfil-input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+}
+
+textarea.perfil-input {
+  resize: none;
+  height: 80px;
+}
+
+.salvar-btn {
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%;
+  background: #222;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* ================================
+   PERFIL COMPLETO (MeuPerfil)
+================================ */
+
+.perfil-grande {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*********** FOTO ***********/
+.foto-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  transition: 0.2s ease;
+}
+
+.foto-perfil:hover {
+  opacity: 0.8;
+}
+
+/*********** INPUTS DE TEXTO ***********/
+.input-titulo {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 5px;
+  outline: none;
+  background: transparent;
+}
+
+.input-sub {
+  width: 100%;
+  font-size: 1rem;
+  color: #555;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 5px;
+  outline: none;
+  background: transparent;
+}
+
+.input-bio {
+  width: 100%;
+  min-height: 80px;
+  resize: none;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  outline: none;
+}
+
+.input-local {
+  width: 100%;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  outline: none;
+}
+
+.input-add {
+  width: 100%;
+  border: 1px dashed #888;
+  border-radius: 8px;
+  padding: 8px;
+  outline: none;
+  font-size: 0.9rem;
+  background: #fafafa;
+  transition: 0.2s ease;
+}
+
+.input-add:focus {
+  background: #fff;
+  border-color: #000;
+}
+
+/*********** TAGS ***********/
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s ease;
+}
+
+.tag:hover {
+  background: #444;
+}
+
+/*********** BOXES DE EXPERIÊNCIA ***********/
+.box-exp {
+  padding: 15px;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box-exp button {
+  align-self: flex-end;
+  background: rgb(201, 59, 59);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+.box-exp button:hover {
+  background: rgb(168, 40, 40);
+}
+
+/*********** BOTÃO SALVAR ***********/
+.btn-salvar {
+  background: #111;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  margin-top: 10px;
+}
+
+.btn-salvar:hover {
+  background: #333;
+}
+
+/*********** TÍTULOS DE SESSÃO ***********/
+.perfil-grande h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  border-left: 4px solid #000;
+  padding-left: 8px;
+}
+
+/*********** RESPONSIVO ***********/
+@media (max-width: 600px) {
+  .perfil-grande {
+    padding: 15px;
+  }
+
+  .foto-perfil {
+    width: 100px;
+    height: 100px;
+  }
+}
