@@ -1,4 +1,6 @@
 import { useParams } from "react-router-dom";
+import { useState } from "react";
+
 
 export default function PerfilProfissional() {
   const { id } = useParams();
@@ -101,27 +103,95 @@ export default function PerfilProfissional() {
   ];
 
   const profissional = profissionais.find(p => p.id === Number(id));
+  const [showChat, setShowChat] = useState(false);
+  const [chatMessages, setChatMessages] = useState([]);
+  const [currentMessage, setCurrentMessage] = useState("");
+  const [connected, setConnected] = useState(false);
+const sendMessage = () => {
+  if (currentMessage.trim() === "") return;
+
+  setChatMessages(prev => [...prev, currentMessage]);
+  setCurrentMessage("");
+
+  setTimeout(() => {
+    const chatBox = document.querySelector(".chat-messages");
+    if (chatBox) chatBox.scrollTop = chatBox.scrollHeight;
+  }, 50);
+};
+
 
   if (!profissional) return <h1>Profissional não encontrado</h1>;
 
   return (
-    <div className="perfil-full-container">
+  <div className="perfil-full-container">
 
-      {/* FOTO + INFO BÁSICA */}
-      <div className="perfil-header">
-        <img src={profissional.foto} className="perfil-foto" />
+    {/* CHAT MODAL */}
+{showChat && (
+  <div className="chat-modal">
+    <div className="chat-box">
 
-        <div className="perfil-basic">
-          <h1>{profissional.nome}</h1>
-          <h3>{profissional.cargo}</h3>
-          <p>{profissional.resumo}</p>
+      <div className="chat-header">
+        <h3>Chat com {profissional.nome}</h3>
+        <button className="close-chat" onClick={() => setShowChat(false)}>✖</button>
+      </div>
 
-          <div className="perfil-basic-tags">
-            <span>{profissional.localizacao}</span>
-            <span>{profissional.area}</span>
+      <div className="chat-messages">
+        {chatMessages.map((msg, index) => (
+          <div key={index} className="chat-message user-msg">
+            {msg}
           </div>
+        ))}
+      </div>
+
+      <div className="chat-input-area">
+        <input
+          type="text"
+          placeholder="Digite sua mensagem..."
+          value={currentMessage}
+          onChange={e => setCurrentMessage(e.target.value)}
+          onKeyDown={e => e.key === "Enter" && sendMessage()}
+        />
+        <button onClick={sendMessage} className="send-btn">Enviar</button>
+      </div>
+
+    </div>
+  </div>
+)}
+
+    {/* HEADER + BOTÕES */}
+    <div className="perfil-header">
+      <img src={profissional.foto} className="perfil-foto" />
+
+      <div className="perfil-basic">
+        <h1>{profissional.nome}</h1>
+        <h3>{profissional.cargo}</h3>
+        <p>{profissional.resumo}</p>
+
+        <div className="perfil-basic-tags">
+          <span>{profissional.localizacao}</span>
+          <span>{profissional.area}</span>
+        </div>
+
+        {/* BOTÕES */}
+        <div className="perfil-actions">
+          <button 
+  className={`connect-btn ${connected ? "connected" : ""}`}
+  onClick={() => !connected && setConnected(true)}
+>
+  {connected ? "Conexão enviada ✓" : "Conectar"}
+</button>
+
+          <button 
+  className="msg-btn"
+  onClick={() => setShowChat(true)}
+>
+  Mensagens
+</button>
+
         </div>
       </div>
+    </div>
+
 
       {/* HARD SKILLS */}
       <section>
