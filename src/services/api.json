@@ -1,0 +1,1159 @@
+[
+  {"id":1,
+    "nome":"Marina Lopes",
+    "foto":"../componentes/imagens/1.jpg",
+    "cargo":"Full Stack",
+    "resumo":"React e Node.",
+    "localizacao":"SP",
+    "area":"Dev",
+    "habilidadesTecnicas":["React",
+    "Node"],
+    "softSkills":["Comunicação"],
+    "experiencias":[{"empresa":"TechWave", "cargo":"Dev","inicio":"2021-02","fim":"2024-01","descricao":"Web."}],
+  "formacao":[{"curso":"SI", "instituicao":"USP", "ano":2020}],
+  "projetos":[{"titulo":"EducaWeb", "link":"#","descricao":"Educação"}],
+  "certificacoes":["AWS"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
+  "areaInteresses":["Educação"]},
+
+
+  {"id":2,
+    "nome":"Lucas Andrade",
+    "foto":"../componentes/imagens/2.jpg",
+    "cargo":"Analista de Dados",
+    "resumo":"ETL.",
+    "localizacao":"PR",
+    "area":"Dados",
+    "habilidadesTecnicas":["Python",
+    "SQL"],
+    "softSkills":["Análise"],
+    "experiencias":[{"empresa":"DataFlow", "cargo":"Dados","inicio":"2020-03","fim":"2023-06","descricao":"Pipelines."}],
+  "formacao":[{"curso":"Eng.Comp", "instituicao":"PUC", "ano":2019}],
+  "projetos":[{"titulo":"DashFin", "link":"#","descricao":"Financeiro"}],
+  "certificacoes":["BI"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
+  "areaInteresses":["ML"]},
+
+
+  {"id":3,
+    "nome":"Fernanda Ribeiro",
+    "foto":"../componentes/imagens/3.jpg",
+    "cargo":"UX Designer",
+    "resumo":"Design UI.",
+    "localizacao":"PE",
+    "area":"Design",
+    "habilidadesTecnicas":["Figma"],
+    "softSkills":["Empatia"],
+    "experiencias":[{"empresa":"Bright", "cargo":"UX","inicio":"2019","fim":"2022","descricao":"Mobile"}],
+  "formacao":[{"curso":"Design", "instituicao":"UFPE", "ano":2018}],
+  "projetos":[{"titulo":"FitLife", "link":"#","descricao":"Saúde"}],
+  "certificacoes":["UX"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+  "areaInteresses":["Design"]},
+
+
+  {"id":4,
+    "nome":"Thiago Martins",
+    "foto":"../componentes/imagens/4.jpg",
+    "cargo":"DevOps",
+    "resumo":"Cloud.",
+    "localizacao":"SP",
+    "area":"DevOps",
+    "habilidadesTecnicas":["AWS",
+    "Terraform"],
+    "softSkills":["Colaboração"],
+    "experiencias":[{"empresa":"CloudB", "cargo":"DevOps","inicio":"2021","fim":"2024","descricao":"CI/CD"}],
+  "formacao":[{"curso":"CC", "instituicao":"Mack", "ano":2020}],
+  "projetos":[{"titulo":"FinCloud", "link":"#","descricao":"Infra"}],
+  "certificacoes":["AWS"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
+  "areaInteresses":["Infra"]},
+
+
+  {"id":5,
+    "nome":"Joana Ferreira",
+    "foto":"../componentes/imagens/5.jpg",
+    "cargo":"PM",
+    "resumo":"Produto.",
+    "localizacao":"MG",
+    "area":"Produto",
+    "habilidadesTecnicas":["Scrum"],
+    "softSkills":["Liderança"],
+    "experiencias":[{"empresa":"Innova", "cargo":"PM","inicio":"2020","fim":"2023","descricao":"Discovery"}],
+  "formacao":[{"curso":"Adm", "instituicao":"UFMG", "ano":2019}],
+  "projetos":[{"titulo":"Agende", "link":"#","descricao":"Agenda"}],
+  "certificacoes":["CSPO"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+  "areaInteresses":["Educação"]},
+
+
+  {"id":6,
+    "nome":"Gabriel Souza",
+    "foto":"../componentes/imagens/6.jpg",
+    "cargo":"ML Engineer",
+    "resumo":"Modelos.",
+    "localizacao":"SC",
+    "area":"IA",
+    "habilidadesTecnicas":["Python",
+    "TF"],
+    "softSkills":["Criticidade"],
+    "experiencias":[{"empresa":"AILabs", "cargo":"ML","inicio":"2020","fim":"2024","descricao":"Modelos"}],
+  "formacao":[{"curso":"EngEle", "instituicao":"UFSC", "ano":2019}],
+  "projetos":[{"titulo":"Clima", "link":"#","descricao":"Previsão"}],
+  "certificacoes":["TF"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
+  "areaInteresses":["DL"]},
+
+
+  {"id":7,
+    "nome":"Renata Oliveira",
+    "foto":"../componentes/imagens/7.jpg",
+    "cargo":"Cyber Analyst",
+    "resumo":"Pentest.",
+    "localizacao":"CE",
+    "area":"Segurança",
+    "habilidadesTecnicas":["Kali"],
+    "softSkills":["Detalhe"],
+    "experiencias":[{"empresa":"Secure", "cargo":"Cyber","inicio":"2019","fim":"2024","descricao":"Incidentes"}],
+  "formacao":[{"curso":"Redes", "instituicao":"IFCE", "ano":2018}],
+  "projetos":[{"titulo":"SecurityWatch", "link":"#","descricao":"SIEM"}],
+  "certificacoes":["CEH"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+  "areaInteresses":["Forense"]},
+
+
+  {"id":8,
+    "nome":"Paulo Mendes",
+    "foto":"../componentes/imagens/8.jpg",
+    "cargo":"Front-end",
+    "resumo":"Web.",
+    "localizacao":"RJ",
+    "area":"Dev",
+    "habilidadesTecnicas":["Vue"],
+    "softSkills":["Comunicação"],
+    "experiencias":[{"empresa":"WebCo", "cargo":"Front","inicio":"2020","fim":"2023","descricao":"UI"}],
+  "formacao":[{"curso":"SI", "instituicao":"UERJ", "ano":2020}],
+  "projetos":[{"titulo":"ShopUI", "link":"#","descricao":"E-commerce"}],
+  "certificacoes":["JS"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Básico"}],
+  "areaInteresses":["Frontend"]},
+
+
+  {"id":9,
+    "nome":"Aline Costa",
+    "foto":"../componentes/imagens/9.jpg",
+    "cargo":"Back-end",
+    "resumo":"APIs.",
+    "localizacao":"GO",
+    "area":"Dev",
+    "habilidadesTecnicas":["Java"],
+    "softSkills":["Organização"],
+    "experiencias":[{"empresa":"CodeLine", "cargo":"Back","inicio":"2021","fim":"2024","descricao":"APIs"}],
+  "formacao":[{"curso":"CC", "instituicao":"UFG", "ano":2020}],
+  "projetos":[{"titulo":"BankAPI", "link":"#","descricao":"Fintech"}],
+  "certificacoes":["Java"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+  "areaInteresses":["Backend"]},
+
+
+  {"id":10,
+    "nome":"Diego Rocha",
+    "foto":"../componentes/imagens/10.jpg",
+    "cargo":"QA",
+    "resumo":"Testes.",
+    "localizacao":"SP",
+    "area":"Qualidade",
+    "habilidadesTecnicas":["Cypress"],
+    "softSkills":["Detalhe"],
+    "experiencias":[{"empresa":"TestPro", "cargo":"QA","inicio":"2020","fim":"2023","descricao":"E2E"}],
+  "formacao":[{"curso":"TI", "instituicao":"ETEC", "ano":2019}],
+  "projetos":[{"titulo":"AutoQA", "link":"#","descricao":"Automação"}],
+  "certificacoes":["ISTQB"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Básico"}],
+  "areaInteresses":["QA"]},
+
+
+  {"id":11,
+    "nome":"Sofia Nunes",
+    "foto":"../componentes/imagens/11.jpg",
+    "cargo":"Scrum Master",
+    "resumo":"Agile.",
+    "localizacao":"SP",
+    "area":"Produto",
+    "habilidadesTecnicas":["Scrum"],
+    "softSkills":["Liderança"],
+    "experiencias":[{"empresa":"AgileHub", "cargo":"SM","inicio":"2020","fim":"2023","descricao":"Rituais"}],
+  "formacao":[{"curso":"Adm", "instituicao":"FATEC", "ano":2018}],
+  "projetos":[{"titulo":"SprintBoost", "link":"#","descricao":"Agile"}],
+  "certificacoes":["SMC"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+  "areaInteresses":["Agile"]},
+
+
+  {"id":12,
+    "nome":"Bruno Lima",
+    "foto":"../componentes/imagens/12.jpg",
+    "cargo":"DBA",
+    "resumo":"Bancos.",
+    "localizacao":"RS",
+    "area":"Dados",
+    "habilidadesTecnicas":["PostgreSQL"],
+    "softSkills":["Análise"],
+    "experiencias":[{"empresa":"DataCore", "cargo":"DBA","inicio":"2019","fim":"2023","descricao":"SQL"}],
+  "formacao":[{"curso":"BD", "instituicao":"PUC", "ano":2019}],
+  "projetos":[{"titulo":"DataSafe", "link":"#","descricao":"Backup"}],
+  "certificacoes":["SQL"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+  "areaInteresses":["Dados"]},
+
+
+  {"id":13,
+    "nome":"Juliana Prado",
+    "foto":"../componentes/imagens/13.jpg",
+    "cargo":"Arquiteta de Software",
+    "resumo":"Soluções.",
+    "localizacao":"SP",
+    "area":"Arquitetura",
+    "habilidadesTecnicas":["Microserviços"],
+    "softSkills":["Comunicação"],
+    "experiencias":[{"empresa":"ArchTech", "cargo":"Arquiteta","inicio":"2019","fim":"2024","descricao":"Sistemas"}],
+  "formacao":[{"curso":"CC", "instituicao":"USP", "ano":2018}],
+  "projetos":[{"titulo":"CoreArch", "link":"#","descricao":"Arquitetura"}],
+  "certificacoes":["Azure"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
+  "areaInteresses":["Sistemas"]},
+
+
+  {"id":14,
+    "nome":"Felipe Duarte",
+    "foto":"../componentes/imagens/14.jpg",
+    "cargo":"Mobile Dev",
+    "resumo":"Apps.",
+    "localizacao":"SP",
+    "area":"Dev",
+    "habilidadesTecnicas":["Flutter"],
+    "softSkills":["Criatividade"],
+    "experiencias":[{"empresa":"AppLab", "cargo":"Mobile","inicio":"2021","fim":"2024","descricao":"Apps"}],
+  "formacao":[{"curso":"SI", "instituicao":"FIAP", "ano":2020}],
+  "projetos":[{"titulo":"RunApp", "link":"#","descricao":"Corrida"}],
+  "certificacoes":["Flutter"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+  "areaInteresses":["Mobile"]},
+
+
+  {"id":15,
+    "nome":"Carla Menezes",
+    "foto":"../componentes/imagens/15.jpg",
+    "cargo":"Marketing Digital",
+    "resumo":"Performance.",
+    "localizacao":"RJ",
+    "area":"Marketing",
+    "habilidadesTecnicas":["Ads"],
+    "softSkills":["Comunicação"],
+    "experiencias":[{"empresa":"Grow", "cargo":"Mkt","inicio":"2020","fim":"2023","descricao":"Tráfego"}],
+  "formacao":[{"curso":"Mkt", "instituicao":"UFRJ", "ano":2019}],
+  "projetos":[{"titulo":"LeadBoost", "link":"#","descricao":"Leads"}],
+  "certificacoes":["Google Ads"],
+  "idiomas":[{"idioma":"Inglês","nivel":"Básico"}],
+  "areaInteresses":["Growth"]
+  },
+
+  {
+    "id":16,
+    "nome":"Eduardo Barcellos",
+    "foto":"../componentes/imagens/16.jpg",
+    "cargo":"Cientista de Dados",
+    "resumo":"Modelagem estatística e ML.",
+    "localizacao":"SP",
+    "area":"Dados",
+    "habilidadesTecnicas":["Python","R","Scikit-Learn"],
+    "softSkills":["Pensamento analítico"],
+    "experiencias":[
+      {"empresa":"InsightLab","cargo":"Cientista","inicio":"2020","fim":"2024","descricao":"Modelos preditivos"}
+    ],
+    "formacao":[{"curso":"Estatística","instituicao":"USP","ano":2019}],
+    "projetos":[{"titulo":"PredictX","link":"#","descricao":"Previsões"}],
+    "certificacoes":["Data Science"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
+    "areaInteresses":["ML"]
+  },
+
+  {
+    "id":17,
+    "nome":"Natalia Freire",
+    "foto":"../componentes/imagens/17.jpg",
+    "cargo":"Analista de Segurança",
+    "resumo":"SOC, resposta a incidentes.",
+    "localizacao":"DF",
+    "area":"Segurança",
+    "habilidadesTecnicas":["SIEM","Splunk"],
+    "softSkills":["Detalhismo"],
+    "experiencias":[
+      {"empresa":"CyberWatch","cargo":"Analista","inicio":"2019","fim":"2024","descricao":"Monitoração 24/7"}
+    ],
+    "formacao":[{"curso":"Redes","instituicao":"UNB","ano":2018}],
+    "projetos":[{"titulo":"ThreatEye","link":"#","descricao":"Detecção"}],
+    "certificacoes":["Security+"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+    "areaInteresses":["Segurança Ofensiva"]
+  },
+
+  {
+    "id":18,
+    "nome":"Ricardo Monteiro",
+    "foto":"../componentes/imagens/18.jpg",
+    "cargo":"Engenheiro de Software",
+    "resumo":"Soluções escaláveis.",
+    "localizacao":"RJ",
+    "area":"Dev",
+    "habilidadesTecnicas":["Java","Spring"],
+    "softSkills":["Colaboração"],
+    "experiencias":[
+      {"empresa":"SoftWave","cargo":"Engenheiro","inicio":"2020","fim":"2024","descricao":"Microserviços"}
+    ],
+    "formacao":[{"curso":"CC","instituicao":"UFRJ","ano":2019}],
+    "projetos":[{"titulo":"TaskFlow","link":"#","descricao":"Produtividade"}],
+    "certificacoes":["Java SE"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
+    "areaInteresses":["Arquitetura"]
+  },
+
+  {
+    "id":19,
+    "nome":"Melissa Araújo",
+    "foto":"../componentes/imagens/19.jpg",
+    "cargo":"Content Designer",
+    "resumo":"UX Writing.",
+    "localizacao":"BA",
+    "area":"Design",
+    "habilidadesTecnicas":["UX Writing","Pesquisa"],
+    "softSkills":["Comunicação"],
+    "experiencias":[
+      {"empresa":"FlowUX","cargo":"Content Designer","inicio":"2020","fim":"2024","descricao":"Microcopy"}
+    ],
+    "formacao":[{"curso":"Comunicação","instituicao":"UFBA","ano":2018}],
+    "projetos":[{"titulo":"VoiceHelp","link":"#","descricao":"Conteúdo conversacional"}],
+    "certificacoes":["UX Writing"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+    "areaInteresses":["Acessibilidade"]
+  },
+
+  {
+    "id":20,
+    "nome":"Marcelo Pires",
+    "foto":"../componentes/imagens/20.jpg",
+    "cargo":"Administrador de Redes",
+    "resumo":"Infraestrutura e redes.",
+    "localizacao":"AM",
+    "area":"Infra",
+    "habilidadesTecnicas":["Cisco","Linux"],
+    "softSkills":["Resolução de problemas"],
+    "experiencias":[
+      {"empresa":"NetCore","cargo":"Rede","inicio":"2019","fim":"2024","descricao":"Monitoração e suporte"}
+    ],
+    "formacao":[{"curso":"Redes","instituicao":"IFAM","ano":2018}],
+    "projetos":[{"titulo":"NetMap","link":"#","descricao":"Mapeamento de rede"}],
+    "certificacoes":["CCNA"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Básico"}],
+    "areaInteresses":["Infraestrutura"]
+  },
+
+  {
+    "id":21,
+    "nome":"Letícia Ramos",
+    "foto":"../componentes/imagens/21.jpg",
+    "cargo":"Analista de Produto Jr",
+    "resumo":"Pesquisa e discovery.",
+    "localizacao":"SP",
+    "area":"Produto",
+    "habilidadesTecnicas":["Analytics","Mapeamento"],
+    "softSkills":["Empatia"],
+    "experiencias":[
+      {"empresa":"ProdFlow","cargo":"AP","inicio":"2021","fim":"2024","descricao":"Discovery e validação"}
+    ],
+    "formacao":[{"curso":"Adm","instituicao":"FECAP","ano":2020}],
+    "projetos":[{"titulo":"FormEasy","link":"#","descricao":"Formulários inteligentes"}],
+    "certificacoes":["Product Discovery"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+    "areaInteresses":["Produto"]
+  },
+
+  {
+    "id":22,
+    "nome":"Douglas Rocha",
+    "foto":"../componentes/imagens/22.jpg",
+    "cargo":"Engenheiro de Machine Learning",
+    "resumo":"Deploy de modelos.",
+    "localizacao":"RS",
+    "area":"IA",
+    "habilidadesTecnicas":["Python","PyTorch","Docker"],
+    "softSkills":["Pensamento crítico"],
+    "experiencias":[
+      {"empresa":"VisionAI","cargo":"ML","inicio":"2020","fim":"2024","descricao":"Modelos de visão computacional"}
+    ],
+    "formacao":[{"curso":"Eng.Comp","instituicao":"PUCRS","ano":2019}],
+    "projetos":[{"titulo":"VisionTrack","link":"#","descricao":"Detecção de objetos"}],
+    "certificacoes":["ML Engineer"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
+    "areaInteresses":["Deep Learning"]
+  },
+
+  {
+    "id":23,
+    "nome":"Patrícia Fogaça",
+    "foto":"../componentes/imagens/23.jpg",
+    "cargo":"Especialista em SEO",
+    "resumo":"Otimização de tráfego orgânico.",
+    "localizacao":"SC",
+    "area":"Marketing",
+    "habilidadesTecnicas":["SEO","Analytics"],
+    "softSkills":["Comunicação"],
+    "experiencias":[
+      {"empresa":"GrowthUp","cargo":"SEO","inicio":"2020","fim":"2023","descricao":"SEO técnico e conteúdo"}
+    ],
+    "formacao":[{"curso":"Publicidade","instituicao":"UFSC","ano":2019}],
+    "projetos":[{"titulo":"RankMax","link":"#","descricao":"SEO avançado"}],
+    "certificacoes":["SEO Expert"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+    "areaInteresses":["Growth"]
+  },
+
+  {
+    "id":24,
+    "nome":"Gustavo Amaral",
+    "foto":"../componentes/imagens/24.jpg",
+    "cargo":"Front-end Pleno",
+    "resumo":"React, UI e componentes.",
+    "localizacao":"SP",
+    "area":"Dev",
+    "habilidadesTecnicas":["React","Styled Components"],
+    "softSkills":["Organização"],
+    "experiencias":[
+      {"empresa":"UIWorks","cargo":"Front","inicio":"2020","fim":"2024","descricao":"Componentes reutilizáveis"}
+    ],
+    "formacao":[{"curso":"SI","instituicao":"FIAP","ano":2019}],
+    "projetos":[{"titulo":"UIBase","link":"#","descricao":"Design system"}],
+    "certificacoes":["React"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+    "areaInteresses":["Frontend"]
+  },
+
+  {
+    "id":25,
+    "nome":"Marta Leme",
+    "foto":"../componentes/imagens/25.jpg",
+    "cargo":"Engenheira de QA",
+    "resumo":"Automação de testes.",
+    "localizacao":"MG",
+    "area":"Qualidade",
+    "habilidadesTecnicas":["Selenium","BDD"],
+    "softSkills":["Detalhismo"],
+    "experiencias":[
+      {"empresa":"TestWay","cargo":"QA","inicio":"2019","fim":"2024","descricao":"Testes automatizados"}
+    ],
+    "formacao":[{"curso":"TI","instituicao":"UFMG","ano":2018}],
+    "projetos":[{"titulo":"AutoTest","link":"#","descricao":"Automação"}],
+    "certificacoes":["QA Automation"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Básico"}],
+    "areaInteresses":["Qualidade"]
+  },
+
+  {
+    "id":26,
+    "nome":"Hugo Santana",
+    "foto":"../componentes/imagens/26.jpg",
+    "cargo":"Dev Back-end Pleno",
+    "resumo":"APIs escaláveis.",
+    "localizacao":"RJ",
+    "area":"Dev",
+    "habilidadesTecnicas":["Node","PostgreSQL"],
+    "softSkills":["Colaboração"],
+    "experiencias":[
+      {"empresa":"APISoft","cargo":"Back","inicio":"2021","fim":"2024","descricao":"APIs REST"}
+    ],
+    "formacao":[{"curso":"CC","instituicao":"UFRJ","ano":2019}],
+    "projetos":[{"titulo":"PayGo","link":"#","descricao":"Pagamentos"}],
+    "certificacoes":["Node"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+    "areaInteresses":["Backend"]
+  },
+
+  {
+    "id":27,
+    "nome":"Tatiana Duarte",
+    "foto":"../componentes/imagens/27.jpg",
+    "cargo":"Designer de Produto",
+    "resumo":"UI, UX e research.",
+    "localizacao":"SP",
+    "area":"Design",
+    "habilidadesTecnicas":["Figma","Research"],
+    "softSkills":["Empatia"],
+    "experiencias":[
+      {"empresa":"DesignLab","cargo":"Produto","inicio":"2020","fim":"2023","descricao":"Pesquisas e protótipos"}
+    ],
+    "formacao":[{"curso":"Design","instituicao":"USP","ano":2019}],
+    "projetos":[{"titulo":"HealthUX","link":"#","descricao":"Saúde"}],
+    "certificacoes":["UX"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+    "areaInteresses":["UX"]
+  },
+
+  {
+    "id":28,
+    "nome":"Leandro Fagundes",
+    "foto":"../componentes/imagens/28.jpg",
+    "cargo":"Cloud Engineer",
+    "resumo":"Infra em nuvem.",
+    "localizacao":"PR",
+    "area":"Infra",
+    "habilidadesTecnicas":["Azure","Kubernetes"],
+    "softSkills":["Resiliência"],
+    "experiencias":[
+      {"empresa":"CloudOps","cargo":"Cloud","inicio":"2020","fim":"2024","descricao":"Infra distribuída"}
+    ],
+    "formacao":[{"curso":"Redes","instituicao":"PUC","ano":2018}],
+    "projetos":[{"titulo":"SkyAdmin","link":"#","descricao":"Orquestração"}],
+    "certificacoes":["Azure"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
+    "areaInteresses":["DevOps"]
+  },
+
+  {
+    "id":29,
+    "nome":"Ana Beatriz Lira",
+    "foto":"../componentes/imagens/29.jpg",
+    "cargo":"Analista de BI",
+    "resumo":"Dashboards e KPIs.",
+    "localizacao":"SP",
+    "area":"Dados",
+    "habilidadesTecnicas":["PowerBI","SQL"],
+    "softSkills":["Análise"],
+    "experiencias":[
+      {"empresa":"DataVision","cargo":"BI","inicio":"2019","fim":"2024","descricao":"Relatórios executivos"}
+    ],
+    "formacao":[{"curso":"Eng.Prod","instituicao":"USP","ano":2018}],
+    "projetos":[{"titulo":"DashCorp","link":"#","descricao":"Dashboards corporativos"}],
+    "certificacoes":["BI Analyst"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+    "areaInteresses":["Dados"]
+  },
+
+  {
+    "id":30,
+    "nome":"Felipe Goulart",
+    "foto":"../componentes/imagens/30.jpg",
+    "cargo":"Mobile iOS",
+    "resumo":"Swift e arquitetura.",
+    "localizacao":"SC",
+    "area":"Dev",
+    "habilidadesTecnicas":["Swift","UIKit"],
+    "softSkills":["Criatividade"],
+    "experiencias":[
+      {"empresa":"Mobix","cargo":"iOS","inicio":"2020","fim":"2024","descricao":"Apps nativos"}
+    ],
+    "formacao":[{"curso":"CC","instituicao":"UFSC","ano":2019}],
+    "projetos":[{"titulo":"MoveIt","link":"#","descricao":"Mobilidade"}],
+    "certificacoes":["iOS Dev"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
+    "areaInteresses":["Mobile"]
+  },
+
+  {
+    "id":31,
+    "nome":"Simone Cardoso",
+    "foto":"../componentes/imagens/31.jpg",
+    "cargo":"Ilustradora Digital",
+    "resumo":"Ilustrações vetoriais.",
+    "localizacao":"BA",
+    "area":"Design",
+    "habilidadesTecnicas":["Illustrator","Photoshop"],
+    "softSkills":["Criatividade"],
+    "experiencias":[
+      {"empresa":"ArtStudio","cargo":"Ilustradora","inicio":"2019","fim":"2024","descricao":"Artes digitais"}
+    ],
+    "formacao":[{"curso":"Design","instituicao":"UFBA","ano":2018}],
+    "projetos":[{"titulo":"ArtPack","link":"#","descricao":"Ilustrações"}],
+    "certificacoes":["Design"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Básico"}],
+    "areaInteresses":["Ilustração"]
+  },
+
+  {
+    "id":"32",
+    "nome":"Rafael Fonseca",
+    "foto":"../componentes/imagens/32.jpg",
+    "cargo":"Game Developer",
+    "resumo":"Jogos 2D e 3D.",
+    "localizacao":"SP",
+    "area":"Games",
+    "habilidadesTecnicas":["Unity","C#"],
+    "softSkills":["Criatividade"],
+    "experiencias":[
+      {"empresa":"PlayDev","cargo":"GameDev","inicio":"2020","fim":"2024","descricao":"Jogos multiplataforma"}
+    ],
+    "formacao":[{"curso":"Jogos Digitais","instituicao":"FIAP","ano":2019}],
+    "projetos":[{"titulo":"GalaxyRun","link":"#","descricao":"Aventura espacial"}],
+    "certificacoes":["Unity"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+    "areaInteresses":["Games"]
+  },
+
+  {
+    "id":33,
+    "nome":"Daniela Assis",
+    "foto":"../componentes/imagens/33.jpg",
+    "cargo":"Arquiteta Cloud",
+    "resumo":"Arquiteturas resilientes.",
+    "localizacao":"SP",
+    "area":"Infra",
+    "habilidadesTecnicas":["AWS","Kubernetes"],
+    "softSkills":["Liderança"],
+    "experiencias":[
+      {"empresa":"CloudPrime","cargo":"Arquiteta","inicio":"2019","fim":"2024","descricao":"Desenho de soluções"}
+    ],
+    "formacao":[{"curso":"Sistemas","instituicao":"Mackenzie","ano":2018}],
+    "projetos":[{"titulo":"InfraEdge","link":"#","descricao":"Infra corporativa"}],
+    "certificacoes":["AWS Architect"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Avançado"}],
+    "areaInteresses":["DevOps"]
+  },
+
+  {
+    "id":34,
+    "nome":"Otávio Meira",
+    "foto":"../componentes/imagens/34.jpg",
+    "cargo":"Full Stack Jr",
+    "resumo":"Node e Angular.",
+    "localizacao":"MG",
+    "area":"Dev",
+    "habilidadesTecnicas":["Node","Angular"],
+    "softSkills":["Comunicação"],
+    "experiencias":[
+      {"empresa":"FastDev","cargo":"FullStack","inicio":"2021","fim":"2024","descricao":"Sistemas web"}
+    ],
+    "formacao":[{"curso":"SI","instituicao":"UFMG","ano":2020}],
+    "projetos":[{"titulo":"TaskSprint","link":"#","descricao":"Produtividade"}],
+    "certificacoes":["JS"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Básico"}],
+    "areaInteresses":["FullStack"]
+  },
+
+  {
+    "id":35,
+    "nome":"Helena Duarte",
+    "foto":"../componentes/imagens/35.jpg",
+    "cargo":"Analista de RH Tech",
+    "resumo":"Recrutamento digital.",
+    "localizacao":"RJ",
+    "area":"RH",
+    "habilidadesTecnicas":["R&S","ATS"],
+    "softSkills":["Empatia"],
+    "experiencias":[
+      {"empresa":"TalentTech","cargo":"RH","inicio":"2020","fim":"2023","descricao":"Recrutamento tech"}
+    ],
+    "formacao":[{"curso":"Psicologia","instituicao":"UFRJ","ano":2019}],
+    "projetos":[{"titulo":"HireFlow","link":"#","descricao":"Recrutamento"}],
+    "certificacoes":["RH"],
+    "idiomas":[{"idioma":"Inglês","nivel":"Intermediário"}],
+    "areaInteresses":["Pessoas"]
+	},
+  {
+    "id": 36,
+    "nome": "Bruno Martins",
+    "foto": "../componentes/imagens/36.jpg",
+    "cargo": "Desenvolvedor Full Stack",
+    "resumo": "Criação de sistemas completos e escaláveis.",
+    "localizacao": "SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["React", "Node", "SQL"],
+    "softSkills": ["Comunicação", "Organização"],
+    "experiencias": [
+      { "empresa": "TechFlow", "cargo": "Full Stack", "inicio": "2021", "fim": "2024", "descricao": "Criação de aplicações web." }
+    ],
+    "formacao": [{ "curso": "Engenharia de Software", "instituicao": "FIAP", "ano": 2020 }],
+    "projetos": [{ "titulo": "TaskManager", "link": "#", "descricao": "Gestão de tarefas." }],
+    "certificacoes": ["React Developer"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["SaaS", "Web"]
+  },
+
+  {
+    "id": 37,
+    "nome": "Larissa Nogueira",
+    "foto": "../componentes/imagens/37.jpg",
+    "cargo": "Designer UX/UI",
+    "resumo": "Experiência do usuário focada em produtos digitais.",
+    "localizacao": "RJ",
+    "area": "Design",
+    "habilidadesTecnicas": ["Figma", "Prototipação"],
+    "softSkills": ["Empatia", "Criatividade"],
+    "experiencias": [
+      { "empresa": "DesignLab", "cargo": "UX/UI", "inicio": "2020", "fim": "2024", "descricao": "Interfaces intuitivas." }
+    ],
+    "formacao": [{ "curso": "Design Digital", "instituicao": "PUC-Rio", "ano": 2019 }],
+    "projetos": [{ "titulo": "AppFit", "link": "#", "descricao": "Aplicativo fitness." }],
+    "certificacoes": ["UX-PM"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["UX Research"]
+  },
+
+  {
+    "id": 38,
+    "nome": "Thiago Oliveira",
+    "foto": "../componentes/imagens/38.jpg",
+    "cargo": "DevOps Engineer",
+    "resumo": "Automação e CI/CD.",
+    "localizacao": "RS",
+    "area": "DevOps",
+    "habilidadesTecnicas": ["Docker", "Kubernetes", "CI/CD"],
+    "softSkills": ["Pensamento crítico"],
+    "experiencias": [
+      { "empresa": "InfraCloud", "cargo": "DevOps", "inicio": "2020", "fim": "2024", "descricao": "Pipelines e automação." }
+    ],
+    "formacao": [{ "curso": "Sistemas da Informação", "instituicao": "PUCRS", "ano": 2019 }],
+    "projetos": [{ "titulo": "AutoDeploy", "link": "#", "descricao": "Pipeline automatizado." }],
+    "certificacoes": ["AWS Practitioner"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Cloud"]
+  },
+
+  {
+    "id": 39,
+    "nome": "Eduarda Moura",
+    "foto": "../componentes/imagens/39.jpg",
+    "cargo": "Arquiteta de Soluções",
+    "resumo": "Arquiteturas escaláveis para grandes sistemas.",
+    "localizacao": "MG",
+    "area": "Tecnologia",
+    "habilidadesTecnicas": ["AWS", "Microserviços"],
+    "softSkills": ["Liderança"],
+    "experiencias": [
+      { "empresa": "TechPrime", "cargo": "Arquiteta", "inicio": "2019", "fim": "2024", "descricao": "Projetos críticos corporativos." }
+    ],
+    "formacao": [{ "curso": "Engenharia da Computação", "instituicao": "UFMG", "ano": 2018 }],
+    "projetos": [{ "titulo": "CloudCore", "link": "#", "descricao": "Arquitetura distribuída." }],
+    "certificacoes": ["AWS Architect"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Cloud Computing"]
+  },
+
+  {
+    "id": 40,
+    "nome": "Carlos Antunes",
+    "foto": "../componentes/imagens/40.jpg",
+    "cargo": "Analista de Segurança",
+    "resumo": "Monitoramento e resposta a incidentes.",
+    "localizacao": "BA",
+    "area": "Segurança",
+    "habilidadesTecnicas": ["SIEM", "Pentest"],
+    "softSkills": ["Detalhismo"],
+    "experiencias": [
+      { "empresa": "SecureOps", "cargo": "SOC Analyst", "inicio": "2020", "fim": "2024", "descricao": "Resposta a incidentes." }
+    ],
+    "formacao": [{ "curso": "Redes", "instituicao": "UFBA", "ano": 2019 }],
+    "projetos": [{ "titulo": "ThreatScan", "link": "#", "descricao": "Análise de ameaças." }],
+    "certificacoes": ["Security+"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Cybersegurança"]
+  },
+
+  {
+    "id": 41,
+    "nome": "Júlia Monteiro",
+    "foto": "../componentes/imagens/41.jpg",
+    "cargo": "Cientista de Dados",
+    "resumo": "Modelos preditivos e estatística aplicada.",
+    "localizacao": "SP",
+    "area": "Dados",
+    "habilidadesTecnicas": ["Python", "TensorFlow"],
+    "softSkills": ["Raciocínio analítico"],
+    "experiencias": [
+      { "empresa": "DataLab", "cargo": "Cientista", "inicio": "2021", "fim": "2024", "descricao": "Modelagem e análise." }
+    ],
+    "formacao": [{ "curso": "Estatística", "instituicao": "USP", "ano": 2020 }],
+    "projetos": [{ "titulo": "PredictPro", "link": "#", "descricao": "Predição avançada." }],
+    "certificacoes": ["Data Science"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Machine Learning"]
+  },
+
+  {
+    "id": 42,
+    "nome": "Marcos Vieira",
+    "foto": "../componentes/imagens/42.jpg",
+    "cargo": "SRE",
+    "resumo": "Confiabilidade e observabilidade.",
+    "localizacao": "PR",
+    "area": "DevOps",
+    "habilidadesTecnicas": ["Grafana", "Kubernetes"],
+    "softSkills": ["Resiliência"],
+    "experiencias": [
+      { "empresa": "CloudOps", "cargo": "SRE", "inicio": "2019", "fim": "2024", "descricao": "Monitoramento de sistemas." }
+    ],
+    "formacao": [{ "curso": "Sistemas", "instituicao": "PUC-PR", "ano": 2018 }],
+    "projetos": [{ "titulo": "ScaleUp", "link": "#", "descricao": "Escalabilidade automática." }],
+    "certificacoes": ["CKA"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["DevOps"]
+  },
+
+  {
+    "id": 43,
+    "nome": "Vitória Lemos",
+    "foto": "../componentes/imagens/43.jpg",
+    "cargo": "Marketing Digital",
+    "resumo": "Estratégias de crescimento.",
+    "localizacao": "SC",
+    "area": "Marketing",
+    "habilidadesTecnicas": ["SEO", "Meta Ads"],
+    "softSkills": ["Comunicação"],
+    "experiencias": [
+      { "empresa": "GrowthLab", "cargo": "Analista", "inicio": "2020", "fim": "2024", "descricao": "Crescimento e aquisição." }
+    ],
+    "formacao": [{ "curso": "Publicidade", "instituicao": "UFSC", "ano": 2019 }],
+    "projetos": [{ "titulo": "BrandBoost", "link": "#", "descricao": "Projetos de SEO." }],
+    "certificacoes": ["SEO Expert"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Básico" }],
+    "areaInteresses": ["Growth"]
+  },
+
+  {
+    "id": 44,
+    "nome": "Fernando Coelho",
+    "foto": "../componentes/imagens/44.jpg",
+    "cargo": "Mobile Developer",
+    "resumo": "Aplicativos iOS e Android.",
+    "localizacao": "SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Swift", "Kotlin"],
+    "softSkills": ["Criatividade"],
+    "experiencias": [
+      { "empresa": "MobLabs", "cargo": "Mobile Dev", "inicio": "2021", "fim": "2024", "descricao": "Aplicativos nativos." }
+    ],
+    "formacao": [{ "curso": "CC", "instituicao": "USP", "ano": 2020 }],
+    "projetos": [{ "titulo": "GoFit", "link": "#", "descricao": "Fitness app." }],
+    "certificacoes": ["iOS Developer"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Mobile"]
+  },
+
+  {
+    "id": 45,
+    "nome": "Carolina Prado",
+    "foto": "../componentes/imagens/45.jpg",
+    "cargo": "Analista de Produto",
+    "resumo": "Descoberta e validação.",
+    "localizacao": "SP",
+    "area": "Produto",
+    "habilidadesTecnicas": ["Mapeamento", "Analytics"],
+    "softSkills": ["Empatia"],
+    "experiencias": [
+      { "empresa": "ProdWorks", "cargo": "AP", "inicio": "2020", "fim": "2024", "descricao": "Pesquisa com usuários." }
+    ],
+    "formacao": [{ "curso": "Adm", "instituicao": "FECAP", "ano": 2019 }],
+    "projetos": [{ "titulo": "ProtoFlow", "link": "#", "descricao": "Validação de protótipos." }],
+    "certificacoes": ["Product Discovery"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Produto"]
+  },
+
+  {
+    "id": 46,
+    "nome": "Guilherme Rocha",
+    "foto": "../componentes/imagens/46.jpg",
+    "cargo": "QA Engineer",
+    "resumo": "Automação de testes e qualidade.",
+    "localizacao": "SC",
+    "area": "Qualidade",
+    "habilidadesTecnicas": ["Selenium", "Cypress"],
+    "softSkills": ["Detalhismo"],
+    "experiencias": [
+      { "empresa": "TestNow", "cargo": "QA", "inicio": "2019", "fim": "2024", "descricao": "Testes end-to-end." }
+    ],
+    "formacao": [{ "curso": "SI", "instituicao": "UFSC", "ano": 2018 }],
+    "projetos": [{ "titulo": "AutoTest", "link": "#", "descricao": "Automação completa." }],
+    "certificacoes": ["QA Automation"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Básico" }],
+    "areaInteresses": ["QA"]
+  },
+
+  {
+    "id": 47,
+    "nome": "Amanda Souza",
+    "foto": "../componentes/imagens/47.jpg",
+    "cargo": "Desenvolvedora Backend",
+    "resumo": "APIs performáticas em Node.",
+    "localizacao": "RJ",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Node", "MongoDB"],
+    "softSkills": ["Resolução de problemas"],
+    "experiencias": [
+      { "empresa": "ApiTech", "cargo": "Backend", "inicio": "2021", "fim": "2024", "descricao": "Sistemas escaláveis." }
+    ],
+    "formacao": [{ "curso": "CC", "instituicao": "UFRJ", "ano": 2020 }],
+    "projetos": [{ "titulo": "PayCore", "link": "#", "descricao": "Sistema de pagamentos." }],
+    "certificacoes": ["Node"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Backend"]
+  },
+
+  {
+    "id": 48,
+    "nome": "Rodrigo Silva",
+    "foto": "../componentes/imagens/48.jpg",
+    "cargo": "Game Designer",
+    "resumo": "Design de mecânicas e narrativa.",
+    "localizacao": "SP",
+    "area": "Games",
+    "habilidadesTecnicas": ["Unity", "C#"],
+    "softSkills": ["Criatividade"],
+    "experiencias": [
+      { "empresa": "PlayWorks", "cargo": "Game Designer", "inicio": "2020", "fim": "2024", "descricao": "Jogos mobile." }
+    ],
+    "formacao": [{ "curso": "Jogos Digitais", "instituicao": "FIAP", "ano": 2019 }],
+    "projetos": [{ "titulo": "StarRunner", "link": "#", "descricao": "Jogo de ação." }],
+    "certificacoes": ["Unity"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Games"]
+  },
+
+  {
+    "id": 49,
+    "nome": "Gabriela Luz",
+    "foto": "../componentes/imagens/49.jpg",
+    "cargo": "Analista de BI",
+    "resumo": "KPIs e análise de indicadores.",
+    "localizacao": "PR",
+    "area": "Dados",
+    "habilidadesTecnicas": ["Power BI", "SQL"],
+    "softSkills": ["Raciocínio lógico"],
+    "experiencias": [
+      { "empresa": "AnalyticsPro", "cargo": "BI", "inicio": "2019", "fim": "2024", "descricao": "Dashboards executivos." }
+    ],
+    "formacao": [{ "curso": "Adm", "instituicao": "UTFPR", "ano": 2018 }],
+    "projetos": [{ "titulo": "VisionBI", "link": "#", "descricao": "Dashboard corporativo." }],
+    "certificacoes": ["PowerBI"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Básico" }],
+    "areaInteresses": ["Dados"]
+  },
+
+  {
+    "id": 50,
+    "nome": "Henrique Ribeiro",
+    "foto": "../componentes/imagens/50.jpg",
+    "cargo": "Arquiteto Cloud",
+    "resumo": "Cloud e infra distribuída.",
+    "localizacao": "SP",
+    "area": "Infra",
+    "habilidadesTecnicas": ["Azure", "Docker"],
+    "softSkills": ["Trabalho em equipe"],
+    "experiencias": [
+      { "empresa": "SkyTech", "cargo": "Cloud Architect", "inicio": "2020", "fim": "2024", "descricao": "Escalabilidade." }
+    ],
+    "formacao": [{ "curso": "Eng. Computação", "instituicao": "USP", "ano": 2019 }],
+    "projetos": [{ "titulo": "CloudMaster", "link": "#", "descricao": "Infra em nuvem." }],
+    "certificacoes": ["Azure Expert"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Cloud"]
+  },
+
+  {
+    "id": 51,
+    "nome": "Tatiana Souza",
+    "foto": "../componentes/imagens/51.jpg",
+    "cargo": "Full Stack Developer",
+    "resumo": "Aplicações completas com React e Node.",
+    "localizacao": "RJ",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["React", "Node"],
+    "softSkills": ["Comunicação"],
+    "experiencias": [
+      { "empresa": "DevFactory", "cargo": "Full Stack", "inicio": "2021", "fim": "2024", "descricao": "Sistemas web modernos." }
+    ],
+    "formacao": [{ "curso": "SI", "instituicao": "UFRJ", "ano": 2020 }],
+    "projetos": [{ "titulo": "DevTools", "link": "#", "descricao": "Ferramenta interna." }],
+    "certificacoes": ["Full Stack"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Web"]
+  },
+
+  {
+    "id": 52,
+    "nome": "Lucas Fernandes",
+    "foto": "../componentes/imagens/52.jpg",
+    "cargo": "Cientista de IA",
+    "resumo": "Modelos avançados e redes neurais.",
+    "localizacao": "RS",
+    "area": "IA",
+    "habilidadesTecnicas": ["TensorFlow", "PyTorch"],
+    "softSkills": ["Pensamento analítico"],
+    "experiencias": [
+      { "empresa": "AIWorks", "cargo": "ML Engineer", "inicio": "2020", "fim": "2024", "descricao": "IA aplicada." }
+    ],
+    "formacao": [{ "curso": "Eng. Comp", "instituicao": "PUCRS", "ano": 2019 }],
+    "projetos": [{ "titulo": "VisionAI", "link": "#", "descricao": "Visão computacional." }],
+    "certificacoes": ["ML Pro"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Deep Learning"]
+  },
+
+  {
+    "id": 53,
+    "nome": "Sabrina Rezende",
+    "foto": "../componentes/imagens/53.jpg",
+    "cargo": "Analista de Marketing",
+    "resumo": "Campanhas digitais e conteúdo.",
+    "localizacao": "SC",
+    "area": "Marketing",
+    "habilidadesTecnicas": ["SEO", "Copywriting"],
+    "softSkills": ["Criatividade"],
+    "experiencias": [
+      { "empresa": "MarketUp", "cargo": "Marketing", "inicio": "2021", "fim": "2024", "descricao": "Conteúdo estratégico." }
+    ],
+    "formacao": [{ "curso": "Publicidade", "instituicao": "UNISUL", "ano": 2020 }],
+    "projetos": [{ "titulo": "BrandPlus", "link": "#", "descricao": "Branding digital." }],
+    "certificacoes": ["Content Marketing"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Básico" }],
+    "areaInteresses": ["Growth"]
+  },
+
+  {
+    "id": 54,
+    "nome": "Renato Campos",
+    "foto": "../componentes/imagens/54.jpg",
+    "cargo": "Engenheiro de Software Sênior",
+    "resumo": "Arquitetura de sistemas complexos.",
+    "localizacao": "SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Java", "Spring", "Microservices"],
+    "softSkills": ["Liderança"],
+    "experiencias": [
+      { "empresa": "SoftPrime", "cargo": "Engenheiro Sênior", "inicio": "2018", "fim": "2024", "descricao": "Soluções empresariais." }
+    ],
+    "formacao": [{ "curso": "CC", "instituicao": "USP", "ano": 2017 }],
+    "projetos": [{ "titulo": "EnterpriseCore", "link": "#", "descricao": "Sistema corporativo." }],
+    "certificacoes": ["Java Architect"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Avançado" }],
+    "areaInteresses": ["Arquitetura"]
+  },
+
+  {
+    "id": 55,
+    "nome": "Beatriz Couto",
+    "foto": "../componentes/imagens/55.jpg",
+    "cargo": "HR Tech Analyst",
+    "resumo": "Recrutamento para TI.",
+    "localizacao": "RJ",
+    "area": "RH",
+    "habilidadesTecnicas": ["ATS", "Mapeamento de Perfis"],
+    "softSkills": ["Empatia"],
+    "experiencias": [
+      { "empresa": "HireTech", "cargo": "Analista", "inicio": "2021", "fim": "2024", "descricao": "Processos seletivos tech." }
+    ],
+    "formacao": [{ "curso": "Psicologia", "instituicao": "UFRJ", "ano": 2020 }],
+    "projetos": [{ "titulo": "HireFlow", "link": "#", "descricao": "Automação de recrutamento." }],
+    "certificacoes": ["RH Digital"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Pessoas"]
+  },
+
+  {
+    "id": 56,
+    "nome": "Diego Costa",
+    "foto": "../componentes/imagens/56.jpg",
+    "cargo": "Administrador de Redes",
+    "resumo": "Infraestrutura e redes empresariais.",
+    "localizacao": "MG",
+    "area": "Infra",
+    "habilidadesTecnicas": ["Cisco", "Linux"],
+    "softSkills": ["Resolução de problemas"],
+    "experiencias": [
+      { "empresa": "NetCorp", "cargo": "Administrador", "inicio": "2019", "fim": "2024", "descricao": "Manutenção de rede." }
+    ],
+    "formacao": [{ "curso": "Redes", "instituicao": "IPE", "ano": 2018 }],
+    "projetos": [{ "titulo": "NetMap", "link": "#", "descricao": "Mapeamento de rede." }],
+    "certificacoes": ["CCNA"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Infraestrutura"]
+  },
+
+  {
+    "id": 57,
+    "nome": "Patrícia Alves",
+    "foto": "../componentes/imagens/57.jpg",
+    "cargo": "SEO Specialist",
+    "resumo": "Otimização para motores de busca.",
+    "localizacao": "SP",
+    "area": "Marketing",
+    "habilidadesTecnicas": ["SEO", "Analytics"],
+    "softSkills": ["Comunicação"],
+    "experiencias": [
+      { "empresa": "SEOPlus", "cargo": "Especialista", "inicio": "2020", "fim": "2024", "descricao": "SEO técnico." }
+    ],
+    "formacao": [{ "curso": "Publicidade", "instituicao": "Mackenzie", "ano": 2019 }],
+    "projetos": [{ "titulo": "RankBoost", "link": "#", "descricao": "Aumento de tráfego." }],
+    "certificacoes": ["SEO Expert"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Básico" }],
+    "areaInteresses": ["Growth"]
+  },
+
+  {
+    "id": 58,
+    "nome": "Fábio Ramos",
+    "foto": "../componentes/imagens/58.jpg",
+    "cargo": "Data Engineer",
+    "resumo": "Pipelines e engenharias de dados.",
+    "localizacao": "RS",
+    "area": "Dados",
+    "habilidadesTecnicas": ["Spark", "ETL"],
+    "softSkills": ["Organização"],
+    "experiencias": [
+      { "empresa": "DataCube", "cargo": "Engenheiro", "inicio": "2021", "fim": "2024", "descricao": "Pipelines e orquestração." }
+    ],
+    "formacao": [{ "curso": "Eng. Comp", "instituicao": "PUCRS", "ano": 2020 }],
+    "projetos": [{ "titulo": "DataFlow", "link": "#", "descricao": "Pipeline de dados." }],
+    "certificacoes": ["Data Engineering"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Big Data"]
+  },
+
+  {
+    "id": 59,
+    "nome": "Mariana Teles",
+    "foto": "../componentes/imagens/59.jpg",
+    "cargo": "Brand Designer",
+    "resumo": "Identidade visual e branding.",
+    "localizacao": "BA",
+    "area": "Design",
+    "habilidadesTecnicas": ["Illustrator", "Branding"],
+    "softSkills": ["Criatividade"],
+    "experiencias": [
+      { "empresa": "BrandHouse", "cargo": "Designer", "inicio": "2020", "fim": "2024", "descricao": "Identidade visual." }
+    ],
+    "formacao": [{ "curso": "Design Gráfico", "instituicao": "UFBA", "ano": 2019 }],
+    "projetos": [{ "titulo": "BrandKit", "link": "#", "descricao": "Pacote de branding." }],
+    "certificacoes": ["Brand Designer"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Básico" }],
+    "areaInteresses": ["Design"]
+  },
+
+  {
+    "id": 60,
+    "nome": "Rafael Peixoto",
+    "foto": "../componentes/imagens/60.jpg",
+    "cargo": "Front-end Developer",
+    "resumo": "Interfaces modernas e responsivas.",
+    "localizacao": "SP",
+    "area": "Dev",
+    "habilidadesTecnicas": ["React", "CSS"],
+    "softSkills": ["Comunicação"],
+    "experiencias": [
+      { "empresa": "UIWorks", "cargo": "Front-end", "inicio": "2021", "fim": "2024", "descricao": "Componentes reutilizáveis." }
+    ],
+    "formacao": [{ "curso": "SI", "instituicao": "FIAP", "ano": 2020 }],
+    "projetos": [{ "titulo": "UIBase", "link": "#", "descricao": "Design system." }],
+    "certificacoes": ["React"],
+    "idiomas": [{ "idioma": "Inglês", "nivel": "Intermediário" }],
+    "areaInteresses": ["Frontend"]
+  }
+]
