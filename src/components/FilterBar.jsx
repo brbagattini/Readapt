@@ -14,7 +14,6 @@ export default function FilterBar({ onApply }) {
   return (
     <div className="filter-bar">
 
-      {/* HARD SKILLS */}
       <select value={hard} onChange={e => setHard(e.target.value)}>
         <option value="">Hard Skill</option>
         <option value="React">React</option>
@@ -42,7 +41,6 @@ export default function FilterBar({ onApply }) {
         <option value="Spark">Spark</option>
       </select>
 
-      {/* SOFT SKILLS */}
       <select value={soft} onChange={e => setSoft(e.target.value)}>
         <option value="">Soft Skill</option>
         <option value="Comunicação">Comunicação</option>
@@ -57,7 +55,6 @@ export default function FilterBar({ onApply }) {
         <option value="Resiliência">Resiliência</option>
       </select>
 
-      {/* ÁREA */}
       <select value={area} onChange={e => setArea(e.target.value)}>
         <option value="">Área</option>
         <option value="Dev">Desenvolvimento</option>

@@ -9,7 +9,7 @@ import SobreNos from "./routes/SobreNos.jsx";
 import MeuPerfil from "./routes/MeuPerfil.jsx";
 import PerfilProfissional from "./routes/PerfilProfissional.jsx";
 import Cadastro from "./routes/Cadastro.jsx";
-// CONFIGURAÇÃO DE ROTAS
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,7 +26,6 @@ const router = createBrowserRouter([
   },
 ]);
 
-// RENDERIZAÇÃO
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />

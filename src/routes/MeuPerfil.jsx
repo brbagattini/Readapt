@@ -9,8 +9,6 @@ export default function MeuPerfil() {
 
     if (data) {
       const stored = JSON.parse(data);
-
-      // conexões armazenadas separadamente
       const conexoes = JSON.parse(localStorage.getItem("conexoes")) || [];
 
       setPerfil({
@@ -19,7 +17,7 @@ export default function MeuPerfil() {
       });
     } else {
       const defaultPerfil = {
-        foto: "https://i.pravatar.cc/300",
+        foto: "",
         nome: "Seu Nome",
         cargo: "Sua Profissão",
         bio: "Escreva aqui sua bio profissional...",
@@ -44,7 +42,7 @@ export default function MeuPerfil() {
         projetos: [
           {
             titulo: "Projeto",
-            link: "https://exemplo.com",
+            link: "#",
             descricao: "Descrição do projeto..."
           }
         ],
@@ -92,7 +90,6 @@ export default function MeuPerfil() {
     reader.onload = () => {
       atualizar("foto", reader.result);
 
-      // salva no localStorage
       const updated = { ...perfil, foto: reader.result };
       localStorage.setItem("perfilCompleto", JSON.stringify(updated));
     };
@@ -104,13 +101,11 @@ export default function MeuPerfil() {
   return (
     <div className="perfil-grande">
       
-      {/* FOTO */}
       <label className="foto-wrapper">
         <img src={perfil.foto} alt="foto" className="foto-perfil" />
         <input type="file" onChange={alterarFoto} style={{ display: "none" }} />
       </label>
 
-      {/* NOME E CARGO */}
       <input
         className="input-titulo"
         value={perfil.nome}
@@ -123,21 +118,18 @@ export default function MeuPerfil() {
         onChange={(e) => atualizar("cargo", e.target.value)}
       />
 
-      {/* BIO */}
       <textarea
         className="input-bio"
         value={perfil.bio}
         onChange={(e) => atualizar("bio", e.target.value)}
       />
 
-      {/* LOCALIZAÇÃO */}
       <input
         className="input-local"
         value={perfil.localizacao}
         onChange={(e) => atualizar("localizacao", e.target.value)}
       />
 
-      {/* TAGS */}
       <h3>Tags</h3>
       <div className="tags">
         {perfil.tags.map((t, i) => (
@@ -155,7 +147,6 @@ export default function MeuPerfil() {
         }}
       />
 
-      {/* HARD SKILLS */}
       <h3>Hard Skills</h3>
       <div className="tags">
         {perfil.hardSkills.map((s, i) => (
@@ -173,7 +164,6 @@ export default function MeuPerfil() {
         }}
       />
 
-      {/* SOFT SKILLS */}
       <h3>Soft Skills</h3>
       <div className="tags">
         {perfil.softSkills.map((s, i) => (
@@ -188,10 +178,7 @@ export default function MeuPerfil() {
         placeholder="Adicionar Soft Skill..."
         onKeyDown={(e) => {
           if (e.key === "Enter") handleAdd("softSkills", e.target.value);
-        }}
-      />
-
-      {/* EXPERIÊNCIAS */}
+        }}/>
       <h3>Experiências</h3>
       {perfil.experiencias.map((exp, i) => (
         <div key={i} className="box-exp">
@@ -225,9 +212,7 @@ export default function MeuPerfil() {
             }}
           />
 
-          <button onClick={() => handleRemove("experiencias", i)}>
-            Remover
-          </button>
+          <button onClick={() => handleRemove("experiencias", i)}>Remover</button>
         </div>
       ))}
 
@@ -239,11 +224,7 @@ export default function MeuPerfil() {
             descricao: ""
           })
         }
-      >
-        + Adicionar Experiência
-      </button>
-
-      {/* CONEXÕES */}
+      >+ Adicionar Experiência</button>
       <h3>Suas Conexões</h3>
 
       <div className="conexoes-container">

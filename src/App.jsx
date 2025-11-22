@@ -3,15 +3,15 @@ import { useState, useEffect } from "react";
 import MenuHamburguer from "./components/MenuHamburguer";
 import SearchBar from "./components/SearchBar";
 import "./App.css";
+import logo from "./components/images/logo.png";
+
 
 export default function App() {
   const [search, setSearch] = useState("");
-  const [avatar, setAvatar] = useState("https://i.pravatar.cc/40");
+  const [avatar, setAvatar] = useState("");
 
-  // 🌙 Tema (dark / light)
   const [darkMode, setDarkMode] = useState(false);
 
-  // Carregar tema + avatar
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme === "dark") {
@@ -28,7 +28,6 @@ export default function App() {
     }
   }, []);
 
-  // Aplicar tema quando mudar
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add("dark");
@@ -47,17 +46,16 @@ export default function App() {
 
           <Link to="/" className="logo-area">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+              src={logo}
               className="logo-img"
               alt="logo"
             />
-            <h2 className="site-name">MeuSite</h2>
+            <h2 className="site-name">Readapt</h2>
           </Link>
         </div>
 
         <SearchBar value={search} onChange={setSearch} />
 
-        {/* BOTÃO DARK MODE */}
         <button
           className="dark-toggle"
           onClick={() => setDarkMode(!darkMode)}
@@ -65,7 +63,6 @@ export default function App() {
           {darkMode ? "☀️" : "🌙"}
         </button>
 
-        {/* AVATAR */}
         <div className="avatar-area">
           <Link to="/meu-perfil">
             <img

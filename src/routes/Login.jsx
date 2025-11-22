@@ -9,7 +9,6 @@ export default function Login() {
   function handleLogin(e) {
     e.preventDefault();
 
-    // SIMULA usuário logado
     localStorage.setItem("user", JSON.stringify({ email }));
 
     navigate("/meu-perfil");

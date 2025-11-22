@@ -12,7 +12,6 @@ export default function PerfilProfissional() {
   const [chatMessages, setChatMessages] = useState([]);
   const [currentMessage, setCurrentMessage] = useState("");
 
-  // 🔥 Buscar profissional pelo ID
   useEffect(() => {
     async function carregar() {
       try {
@@ -43,7 +42,6 @@ export default function PerfilProfissional() {
   return (
     <div className="perfil-full-container">
 
-      {/* CHAT MODAL */}
       {showChat && (
         <div className="chat-modal">
           <div className="chat-box">
@@ -78,7 +76,6 @@ export default function PerfilProfissional() {
         </div>
       )}
 
-      {/* HEADER */}
       <div className="perfil-header">
         <img src={profissional.foto} className="perfil-foto" />
 
@@ -92,7 +89,6 @@ export default function PerfilProfissional() {
             <span>{profissional.area}</span>
           </div>
 
-          {/* BOTÕES */}
           <div className="perfil-actions">
             <button
               className="btn-conectar"
@@ -118,7 +114,6 @@ export default function PerfilProfissional() {
         </div>
       </div>
 
-      {/* HARD SKILLS */}
       <section>
         <h2>Hard Skills</h2>
         <div className="tag-list">
@@ -127,8 +122,7 @@ export default function PerfilProfissional() {
           ))}
         </div>
       </section>
-
-      {/* SOFT SKILLS */}
+      
       <section>
         <h2>Soft Skills</h2>
         <div className="tag-list">
@@ -138,7 +132,6 @@ export default function PerfilProfissional() {
         </div>
       </section>
 
-      {/* EXPERIÊNCIAS */}
       <section>
         <h2>Experiências</h2>
         {profissional.experiencias?.map((exp, i) => (
@@ -149,7 +142,6 @@ export default function PerfilProfissional() {
         ))}
       </section>
 
-      {/* FORMAÇÃO */}
       <section>
         <h2>Formação</h2>
         {profissional.formacao?.map((f, i) => (
@@ -160,7 +152,6 @@ export default function PerfilProfissional() {
         ))}
       </section>
 
-      {/* PROJETOS */}
       <section>
         <h2>Projetos</h2>
         {profissional.projetos?.map((p, i) => (
@@ -172,7 +163,6 @@ export default function PerfilProfissional() {
         ))}
       </section>
 
-      {/* CERTIFICAÇÕES */}
       <section>
         <h2>Certificações</h2>
         <ul>
@@ -182,7 +172,6 @@ export default function PerfilProfissional() {
         </ul>
       </section>
 
-      {/* IDIOMAS */}
       <section>
         <h2>Idiomas</h2>
         {profissional.idiomas?.map((l, i) => (
@@ -190,7 +179,6 @@ export default function PerfilProfissional() {
         ))}
       </section>
 
-      {/* INTERESSES */}
       <section>
         <h2>Áreas de Interesse</h2>
         <div className="tag-list">

@@ -1,6 +1,5 @@
 // Import do JSON local
 import data from "../services/api.json";
-
 import foto1 from "../components/images/1.jpeg";
 import foto2 from "../components/images/2.avif";
 import foto3 from "../components/images/3.jpeg";
@@ -62,7 +61,6 @@ import foto58 from "../components/images/58.jpg";
 import foto59 from "../components/images/59.jpeg";
 import foto60 from "../components/images/60.jpg";
 
-// OBJETO IMAGENS
 export const imagens = {
   1: foto1, 2: foto2, 3: foto3, 4: foto4, 5: foto5,
   6: foto6, 7: foto7, 8: foto8, 9: foto9, 10: foto10,
@@ -78,22 +76,18 @@ export const imagens = {
   56: foto56, 57: foto57, 58: foto58, 59: foto59, 60: foto60
 };
 
-// 🔥 INSERE AUTOMATICAMENTE A IMAGEM CORRETA NO PROFISSIONAL
 const dataProcessado = data.map((p) => ({
   ...p,
   foto: imagens[p.id] || p.foto || ""
 }));
 
-// -------- API LOCAL --------
 export const ProfissionaisAPI = {
-  // Buscar todos
+
   getAll: async () => dataProcessado,
 
-  // Buscar por ID
   getById: async (id) =>
     dataProcessado.find((item) => item.id === Number(id)),
 
-  // Criar (em memória)
   create: async (novo) => {
     const novoId =
       dataProcessado.length > 0
@@ -110,7 +104,6 @@ export const ProfissionaisAPI = {
     return item;
   },
 
-  // Atualizar
   update: async (id, valores) => {
     const index = dataProcessado.findIndex((p) => p.id === Number(id));
     if (index === -1) return null;
@@ -119,7 +112,6 @@ export const ProfissionaisAPI = {
     return dataProcessado[index];
   },
 
-  // Deletar
   delete: async (id) => {
     const index = dataProcessado.findIndex((p) => p.id === Number(id));
     if (index === -1) return false;

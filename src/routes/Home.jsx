@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import ProfessionalCard from "../components/ProfessionalCard";
 import FilterBar from "../components/FilterBar";
-import { ProfissionaisAPI } from "../services/api"; // ✔ caminho correto
+import { ProfissionaisAPI } from "../services/api";
 
 export default function Home() {
   const { search } = useOutletContext();
@@ -13,7 +13,6 @@ export default function Home() {
 
   const carouselRef = useRef(null);
 
-  // 🔥 CARREGAR PROFISSIONAIS DO JSON LOCAL
   useEffect(() => {
     async function carregar() {
       try {
@@ -28,7 +27,6 @@ export default function Home() {
     carregar();
   }, []);
 
-  // 🔥 FILTROS + BUSCA
   const filtrados = profissionais.filter((p) => {
     const texto = search.toLowerCase();
 
