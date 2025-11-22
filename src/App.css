@@ -250,24 +250,6 @@ p {
   color: #444;
 }
 
-.cards-carousel {
-  display: flex;
-  gap: 20px;
-  padding: 10px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  position: relative;
-}
-
-.cards-carousel::-webkit-scrollbar {
-  height: 8px;
-}
-
-.cards-carousel::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 10px;
-}
-
 .prof-card {
   min-width: 200px;
   height: 260px;
@@ -276,26 +258,12 @@ p {
   border-radius: 6px;
 }
 
-.carousel-arrow {
-  position: sticky;
-  right: 0;
-  align-self: center;
-  font-size: 2rem;
-  cursor: pointer;
-  color: black;
-  padding-left: 10px;
-  padding-right: 5px;
-  background: white;
-  border-left: 2px solid black;
-}
-/* ============= TITULO ================ */
 .section-title {
   margin: 20px;
   font-size: 1.6rem;
   font-weight: bold;
 }
 
-/* ============= CARD ================ */
 .card-container {
   min-width: 240px;
   background: white;
@@ -335,7 +303,6 @@ p {
   color: #444;
 }
 
-/* ============= CARROSSEL ================ */
 
 .carousel-wrapper {
   position: relative;
@@ -359,8 +326,6 @@ p {
   border-radius: 10px;
 }
 
-/* ============= SETA LATERAL (NETFLIX) ================ */
-
 .carousel-arrow {
   position: absolute;
   right: 10px;
@@ -379,41 +344,9 @@ p {
   background: white;
   transform: translateY(-50%) scale(1.15);
 }
-/* ===========================
-   CARD FICHA TÉCNICA (HOME)
-=========================== */
-
-.tech-card {
-  min-width: 240px;
-  background: white;
-  border: 2px solid #bbb;
-  border-radius: 12px;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  transition: transform 0.2s;
-}
 
 .tech-card:hover {
   transform: scale(1.03);
-}
-
-.tech-card-img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border: 2px solid #bbb;
-  border-radius: 10px;
-}
-
-.tech-card-box {
-  border: 2px solid #bbb;
-  padding: 10px;
-  border-radius: 10px;
-  background: #fafafa;
 }
 
 .tech-card-box h3 {
@@ -436,7 +369,7 @@ p {
 .tech-card-small {
   flex: 1;
   border: 2px solid #bbb;
-  padding: 6px;
+  padding: 10px;
   border-radius: 8px;
   background: #fafafa;
 }
@@ -450,11 +383,11 @@ p {
   font-size: 0.85rem;
 }
 .tech-card {
-  min-width: 300px;     /* antes era 240px */
+  min-width: 300px;
   background: white;
   border: 2px solid #bbb;
   border-radius: 12px;
-  padding: 14px;        /* mais espaço interno */
+  padding: 14px;
   text-decoration: none;
   color: black;
   display: flex;
@@ -465,7 +398,7 @@ p {
 
 .tech-card-img {
   width: 100%;
-  height: 200px;        /* antes era 150px */
+  height: 200px;
   object-fit: cover;
   border: 2px solid #bbb;
   border-radius: 10px;
@@ -477,13 +410,6 @@ p {
   border-radius: 10px;
   background: #fafafa;
 }
-
-.tech-card-small {
-  padding: 10px;        /* mais espaço */
-}
-/* ===========================
-   FILTER BAR
-=========================== */
 
 .filter-bar {
   display: flex;
@@ -514,9 +440,6 @@ p {
 .filter-btn:hover {
   background: #333;
 }
-/* ===============================
-   PERFIL PROFISSIONAL COMPLETO
-================================*/
 
 .perfil-full-container {
   max-width: 900px;
@@ -527,7 +450,6 @@ p {
   gap: 40px;
 }
 
-/* HEADER */
 .perfil-header {
   display: flex;
   gap: 30px;
@@ -564,22 +486,13 @@ p {
   font-size: 0.9rem;
 }
 
-/* TAGS */
 .tag-list {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-.tag {
-  background: black;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 0.85rem;
-}
 
-/* BLOCO DE INFO */
 .card-block {
   background: #f6f6f6;
   border: 2px solid #ccc;
@@ -591,9 +504,6 @@ p {
 .card-block h3 {
   margin: 0 0 6px 0;
 }
-/* ===============================
-   BOTÕES DE AÇÃO
-================================*/
 
 .perfil-actions {
   margin-top: 14px;
@@ -601,27 +511,6 @@ p {
   gap: 12px;
 }
 
-.connect-btn,
-.msg-btn {
-  padding: 10px 18px;
-  font-size: 0.95rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-/* Conectar */
-.connect-btn {
-  background: #0077ff;
-  color: white;
-}
-
-.connect-btn:hover {
-  background: #005fcc;
-}
-
-/* Mensagem */
 .msg-btn {
   background: white;
   border: 2px solid black;
@@ -631,10 +520,6 @@ p {
 .msg-btn:hover {
   background: #eee;
 }
-
-/* ===============================
-   MODAL DE MENSAGEM
-================================*/
 
 .message-modal {
   position: fixed;
@@ -683,18 +568,6 @@ p {
   cursor: pointer;
 }
 
-.send-btn {
-  background: black;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-}
-/* ===============================
-   CHAT MODAL
-================================*/
-
 .chat-modal {
   position: fixed;
   top: 0;
@@ -719,7 +592,6 @@ p {
   flex-direction: column;
 }
 
-/* HEADER */
 .chat-header {
   padding: 12px;
   border-bottom: 2px solid #ddd;
@@ -735,7 +607,6 @@ p {
   cursor: pointer;
 }
 
-/* MENSAGENS */
 .chat-messages {
   flex: 1;
   overflow-y: auto;
@@ -758,7 +629,6 @@ p {
   align-self: flex-end;
 }
 
-/* INPUT */
 .chat-input-area {
   padding: 12px;
   border-top: 2px solid #ddd;
@@ -782,10 +652,6 @@ p {
   cursor: pointer;
 }
 
-/* ===============================
-   BOTÃO CONECTAR
-================================*/
-
 .connect-btn {
   background: #0077ff;
   color: white;
@@ -808,7 +674,7 @@ p {
   background: #00aa55;
   cursor: default;
 }
-/* LOGIN E CADASTRO */
+
 .auth-container {
   max-width: 400px;
   margin: 50px auto;
@@ -839,7 +705,6 @@ p {
   cursor: pointer;
 }
 
-/* MEU PERFIL (editável) */
 .perfil-input {
   width: 100%;
   border: none;
@@ -862,9 +727,6 @@ textarea.perfil-input {
   border-radius: 8px;
   cursor: pointer;
 }
-/* ================================
-   PERFIL COMPLETO (MeuPerfil)
-================================ */
 
 .perfil-grande {
   max-width: 700px;
@@ -879,7 +741,6 @@ textarea.perfil-input {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*********** FOTO ***********/
 .foto-wrapper {
   width: 120px;
   height: 120px;
@@ -900,7 +761,6 @@ textarea.perfil-input {
   opacity: 0.8;
 }
 
-/*********** INPUTS DE TEXTO ***********/
 .input-titulo {
   width: 100%;
   font-size: 1.4rem;
@@ -958,7 +818,6 @@ textarea.perfil-input {
   border-color: #000;
 }
 
-/*********** TAGS ***********/
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -980,7 +839,6 @@ textarea.perfil-input {
   background: #444;
 }
 
-/*********** BOXES DE EXPERIÊNCIA ***********/
 .box-exp {
   padding: 15px;
   background: #fafafa;
@@ -1005,7 +863,6 @@ textarea.perfil-input {
   background: rgb(168, 40, 40);
 }
 
-/*********** BOTÃO SALVAR ***********/
 .btn-salvar {
   background: #111;
   color: white;
@@ -1021,7 +878,6 @@ textarea.perfil-input {
   background: #333;
 }
 
-/*********** TÍTULOS DE SESSÃO ***********/
 .perfil-grande h3 {
   margin-top: 10px;
   font-size: 1.1rem;
@@ -1029,7 +885,6 @@ textarea.perfil-input {
   padding-left: 8px;
 }
 
-/*********** RESPONSIVO ***********/
 @media (max-width: 600px) {
   .perfil-grande {
     padding: 15px;
